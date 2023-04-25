@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULAIRE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+    <!--<form>. Cet attribut permet de placer des éléments label 
+    dans le document 
+    sans qu'ils soient nécessairement imbriqués dans un formulaire.-->
+    <form><!-- Début du formulaire -->
+        <!--<h2>Editeur de script</h2>-->
+        <div class="haut">
+            <div class="titres">
+                <h1>Éditeur de script </h1>
+            </div>
+            <div class="titres">
+                <h2> Nous soumettre votre projet</h2>
+            </div>
+        </div>
+        <div class="container">
+            <div class="gauche">
+                <div class="Information"><!-- Premier block : la partie qui contient NOM, PRENOM, MAIL -->
+                    <div class="vert">
+                        <label><!--Un élément <label> peut être associé à un contrôle 
+                            en plaçant l'élément du contrôle dans l'élément <label> 
+                            ou en utilisant l'attribut for. Un tel contrôle sera appelé le contrôle 
+                            étiqueté par l'élément <label>. 
+                            Un contrôle peut être associé à plusieurs <label>.-->
+                            Nom <!--id définit un identifiant qui doit être unique-->
+                            <input type="text" id="Nom" name="nom" placeholder="Votre nom" required>
+                        </label>
+                    </div>
+                    <br>
+                    <div class="vert"><!-- Donner la couleur vert dans tout les class vert-->
+                        <label>
+                            Prénom
+                            <input type="text" id="Prenom" name="prenom" placeholder="Votre prénom" required>
+                        </label>
+                    </div>
+                    <br>
+                    <div class="vert">
+                        <label>
+                            E-mail
+                            <input type="email" id="E-mail" name="email" placeholder="Votre E-mail" required>
+                        </label>
+                    </div>
+                    <br>
+                </div>
+                <div class="Information">
+                    <div class="vert">
+                        <label>
+                            Echeance: <!-- Case à cocher -->
+                        </label><br>
+                        <div class="echen">
+                            <label>
+                                <input type="radio" name="group1" value="Sous 3 mois"> sous 3 mois
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="group1" value="3 à 6 mois"> 3 à 6 mois
+                            </label>
+                            <br>
+                            <label>
+                                <input type="radio" name="group1" value="Plus de 6 mois"> plus de 6 mois
+                            </label>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="vert">
+                        <label for="Demande"><!-- Case à cocher -->
+                            Nature de la demande:
+                        </label>
+                        <br>
+                        <label>
+                            <!-- Case à cocher -->
+                            <input type="checkbox" name="checkbox" /> Investissement
+                        </label>
+                        <label>
+                            <input type="checkbox" name="checkbox" /> Prestation de
+                            conseil
+                        </label>
+                        <br>
+                        <label>
+                            Réponse souhaitée sous:<!-- Case à cocher -->
+                        </label>
+                        <select><!-- Liste déroulante -->
+                            <dropdown>
+                                <option value="">faites votre choix</option>
+                                <option value="5 jours">5 jours</option>
+                                <option value="8 jours">8 jours</option>
+                                <option value="2 saimaine jours">2 semaine</option>
+                                <option value="+ 2 saimaine jours">plus de 2 semaine</option>
+                            </dropdown>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="droit">
+                <div class="Information">
+                    <label for="Intitulé">Intitulé du projet:<sup>*</sup></label>
+                    <input type="text" id="intitulé_du_projet" name="Intitulé" placeholder="Intitulé du projet"
+                        required>
+                    <br>
+                    <label for="Description">Description du projet:<sup>*</sup> <br></label>
+                    <textarea name="texte" id="Description_du_projet" 
+                        placeholder="Description du projet" required></textarea><br>
+                </div>
+                <div class="boutons">
+                    <input type="submit" class="Validé" value="Validé">
+                    <input type="reset" class="Réinitialisé" value="Réinitialisé">
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+
+</html>

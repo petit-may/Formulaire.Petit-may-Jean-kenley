@@ -1,0 +1,111 @@
+
+body{
+    background:linear-gradient(80deg,grey, black);
+
+}
+.haut{ /* changer la couleur du titre*/
+    color: white;
+    width: 800px; 
+    margin: auto;
+    border-radius: 10px; 
+}
+.titres{ /* titres = h1 &  h2 => Éditeur de script*/
+    border-radius: 15px;
+    padding: 10px;
+    margin-bottom: 70px; 
+}
+h1{
+    background-color: rgb(117, 10, 28);
+    margin-left: -270px;
+    border-radius: 20px;
+    position: absolute;
+    padding: 20px 10px 20px 10px; 
+}
+h2{    
+    background-color: rgb(71, 25, 33);
+    margin-left: 200px;
+    margin-top: -10px; 
+    border-radius: 20px;
+    position: absolute;
+    padding: 20px 10px 20px 10px; 
+/* qui permet de définir 
+les différents écarts de remplissage sur les quatre côtés d'un élément */
+
+}
+
+.container{
+    background-color: rgb(94, 165, 197);
+    width: 70%;
+    margin: auto;
+    padding: 20px 20px 700px 20px; 
+    border-radius: 2em;
+    
+  }
+
+.gauche{
+    width: 30%;
+    float: left;
+}
+.Information{
+    background-color: gold;
+    margin-bottom: 50px;
+    padding: 15px;
+    border-radius: 20px;
+/* La propriété margin-bottom définit la marge du bas appliquée à un élément.*/    
+}
+#Nom,#Prenom,#E-mail,#intitulé_du_projet,#Description_du_projet{
+    border: 3px solid #0bd1df;
+    border-radius: 20px;
+    font-size: 15px;
+}
+label{
+    font-size: 20px;
+}
+
+.vert{
+    background-color: rgb(99, 221, 69);
+    border-radius: 20px;
+    padding: 15px;
+    margin-bottom: 10px;
+    
+}
+
+.echen{
+    margin-top: -5%;
+    margin-left: 30%;
+    background-color: gold;
+    border-radius: 20px;
+    padding: 15px;
+  }
+
+
+.droit{
+    float: right;
+    width: 65%;
+}
+
+/* La balise <textarea> permet de saisir plusieurs lignes de texte,
+ là où la traditionnelle balise <input type='text'>
+  n'autorise qu'une seule ligne de saisie. Ici, 
+  la méthode POST est préférable à la méthode GET
+ afin d'éviter que les messages soient visibles dans l'historique du navigateur.*/
+
+textarea{
+    width: 90%;
+    height: 400px;
+    text-align: center;
+    margin-left: 35px;
+    margin-top: 15px;
+}
+/* "margin-left: 350px;" permet de bougé de gauche*/
+.boutons{
+    margin-left: 350px;
+}
+
+.Validé{
+    background-color: gold;
+}
+
+.Réinitialisé{
+    background-color: rgb(99, 221, 69);
+}
